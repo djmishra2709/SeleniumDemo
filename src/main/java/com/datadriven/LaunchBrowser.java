@@ -22,7 +22,7 @@ public class LaunchBrowser {
 		  driver = new FirefoxDriver(capabilities);
 		  driver.manage().window().maximize();
 		  driver.get(URL);
-		  driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+		  Waits.Simplewaits(10);
 		  
 	}
 	public void closebrowser()

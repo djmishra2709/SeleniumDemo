@@ -3,6 +3,7 @@ package com.testcases;
 import org.testng.annotations.Test;
 
 import com.datadriven.LaunchBrowser;
+import com.datadriven.Waits;
 
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
@@ -34,11 +35,11 @@ public class TestCase1 extends LaunchBrowser{
    public void login() 
   {
 	 System.out.println("test case is executing");
+	 Waits.Simplewaits(10);
 	 
   }
  
-
-  @AfterClass
+  @AfterTest
   public void afterMethod() 
   {
 	closebrowser();
