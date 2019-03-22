@@ -9,26 +9,32 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-public class SelectAction {
+import com.testBase.CloseBrowser;
+import com.testBase.LaunchBrowser;
+
+public class FillformTestCase {
 	
 public static WebDriver driver;
-@Test
+
+	@Parameters({"URL"})
+	@BeforeTest
+	public void lauchURL(String URL)
+	{
+		LaunchBrowser.launch(URL);
+		
+	}
+
+
+	@Test
 	public void selectactions() throws InterruptedException
 	{
-		System.setProperty("webdriver.gecko.driver", "E:\\geckodriver.exe");
-		
-		  DesiredCapabilities capabilities = new DesiredCapabilities();
-		  capabilities = DesiredCapabilities.firefox();
-		  capabilities.setBrowserName("firefox");
-		  capabilities.setVersion("your firefox version");
-		  capabilities.setPlatform(Platform.WINDOWS);
-		  capabilities.setCapability("marionette", false);
-		  driver = new FirefoxDriver(capabilities);
-		  driver.manage().window().maximize();
-		  driver.get("https://www.facebook.com/");
-		Thread.sleep(5000);
 		
 		WebElement select = driver.findElement(By.xpath("//div[contains(text(),'Birthday')]/parent::div/div[2]//select[@id ='year']"));
 		Select sel =new Select(select);
@@ -44,7 +50,13 @@ public static WebDriver driver;
 			}
 		}
 		Thread.sleep(5000);
-		driver.close();
 		
+		
+	}
+	
+	@AfterTest
+	public void closeBrowser()
+	{
+		CloseBrowser.closeBrowser();
 	}
 }

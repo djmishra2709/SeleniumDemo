@@ -2,12 +2,12 @@
 <testng-results skipped="1" failed="0" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite1" duration-ms="67857" started-at="2019-03-22T08:07:52Z" finished-at="2019-03-22T08:09:00Z">
+  <suite name="Suite1" duration-ms="25321" started-at="2019-03-22T14:11:26Z" finished-at="2019-03-22T14:11:51Z">
     <groups>
     </groups>
-    <test name="test1" duration-ms="67857" started-at="2019-03-22T08:07:52Z" finished-at="2019-03-22T08:09:00Z">
-      <class name="com.testcases.TestCase1">
-        <test-method status="FAIL" signature="beforeMethod(java.lang.String)[pri:0, instance:com.testcases.TestCase1@4678c730]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-03-22T13:37:52Z" finished-at="2019-03-22T13:37:52Z">
+    <test name="test1" duration-ms="25321" started-at="2019-03-22T14:11:26Z" finished-at="2019-03-22T14:11:51Z">
+      <class name="com.homepagetestcase.LaunchURLTestCase">
+        <test-method status="FAIL" signature="beforeMethod(java.lang.String)[pri:0, instance:com.homepagetestcase.LaunchURLTestCase@14acaea5]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-03-22T19:41:26Z" finished-at="2019-03-22T19:41:26Z">
           <params>
             <param index="0">
               <value>
@@ -18,9 +18,9 @@
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.datadriven.Waits.Simplewaits(Waits.java:19)
-	at com.datadriven.LaunchBrowser.launch(LaunchBrowser.java:25)
-	at com.testcases.TestCase1.beforeMethod(TestCase1.java:31)
+	at com.testBase.Waits.Simplewaits(Waits.java:19)
+	at com.testBase.LaunchBrowser.launch(LaunchBrowser.java:29)
+	at com.homepagetestcase.LaunchURLTestCase.beforeMethod(LaunchURLTestCase.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -29,10 +29,8 @@
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
@@ -52,13 +50,13 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="login()[pri:0, instance:com.testcases.TestCase1@4678c730]" name="login" duration-ms="3" started-at="2019-03-22T13:39:00Z" finished-at="2019-03-22T13:39:00Z">
+        <test-method status="SKIP" signature="login()[pri:0, instance:com.homepagetestcase.LaunchURLTestCase@14acaea5]" name="login" duration-ms="6" started-at="2019-03-22T19:41:51Z" finished-at="2019-03-22T19:41:51Z">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-	at com.datadriven.Waits.Simplewaits(Waits.java:19)
-	at com.datadriven.LaunchBrowser.launch(LaunchBrowser.java:25)
-	at com.testcases.TestCase1.beforeMethod(TestCase1.java:31)
+	at com.testBase.Waits.Simplewaits(Waits.java:19)
+	at com.testBase.LaunchBrowser.launch(LaunchBrowser.java:29)
+	at com.homepagetestcase.LaunchURLTestCase.beforeMethod(LaunchURLTestCase.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -67,10 +65,8 @@
 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:144)
-	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:169)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:634)
+	at org.testng.TestRunner.run(TestRunner.java:602)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
 	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
 	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
@@ -90,11 +86,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.testcases.TestCase1@4678c730]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-03-22T13:39:00Z" finished-at="2019-03-22T13:39:00Z">
+        <test-method status="SKIP" signature="closeBrowser()[pri:0, instance:com.homepagetestcase.LaunchURLTestCase@14acaea5]" name="closeBrowser" is-config="true" duration-ms="0" started-at="2019-03-22T19:41:51Z" finished-at="2019-03-22T19:41:51Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.testcases.TestCase1 -->
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.homepagetestcase.LaunchURLTestCase -->
     </test> <!-- test1 -->
   </suite> <!-- Suite1 -->
 </testng-results>

@@ -102,7 +102,7 @@
                     <div class="method-list-content skipped suite-Suite1">
                       <span>
                         <img width="3%" src="skipped.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.testcases.TestCase1" hash-for-method="login">login</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite1" title="com.homepagetestcase.LaunchURLTestCase" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content skipped suite-Suite1 -->
@@ -120,7 +120,7 @@
           <div class="suite-Suite1-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
-              <span class="class-name">com.testcases.TestCase1</span>
+              <span class="class-name">com.homepagetestcase.LaunchURLTestCase</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -129,10 +129,10 @@
                   </a> <!-- login -->
                   <span class="method-name">login</span>
                   <div class="stack-trace">java.lang.NullPointerException
-	at com.datadriven.Waits.Simplewaits(Waits.java:19)
-	at com.datadriven.LaunchBrowser.launch(LaunchBrowser.java:25)
-	at com.testcases.TestCase1.beforeMethod(TestCase1.java:31)
-... Removed 25 stack frames
+	at com.testBase.Waits.Simplewaits(Waits.java:19)
+	at com.testBase.LaunchBrowser.launch(LaunchBrowser.java:29)
+	at com.homepagetestcase.LaunchURLTestCase.beforeMethod(LaunchURLTestCase.java:17)
+... Removed 23 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -148,10 +148,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite1&quot;&gt;
-  &lt;parameter name=&quot;URL&quot; value=&quot;http://www.facebook.com&quot;/&gt;
   &lt;test name=&quot;test1&quot;&gt;
+    &lt;parameter name=&quot;URL&quot; value=&quot;http://www.facebook.com&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.testcases.TestCase1&quot;/&gt;
+      &lt;class name=&quot;com.homepagetestcase.LaunchURLTestCase&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- test1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite1 --&gt;
@@ -194,13 +194,13 @@ data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
-data.setCell(0, 2, 'com.testcases.TestCase1')
-data.setCell(0, 3, 3);
+data.setCell(0, 2, 'com.homepagetestcase.LaunchURLTestCase')
+data.setCell(0, 3, 6);
 window.suiteTableData['Suite1']= { tableData: data, tableDiv: 'times-div-Suite1'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 6 ms</span>
               <div id="times-div-Suite1">
               </div> <!-- times-div-Suite1 -->
             </div> <!-- times-div -->
@@ -226,16 +226,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.testcases.TestCase1</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
+              <div class="chronological-class-name">com.homepagetestcase.LaunchURLTestCase</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">beforeMethod(http://www.facebook.com)</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-class before -->
+              </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">67801 ms</span>
+                <span class="method-start">25294 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

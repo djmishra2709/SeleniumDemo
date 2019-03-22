@@ -30,6 +30,8 @@ public class DynamicTable {
 		  driver = new FirefoxDriver(capabilities);
 		  driver.manage().window().maximize();
 	}
+	
+	
 	@Test(enabled=false)
 	public void tablehandle() throws InterruptedException
 	{
@@ -79,6 +81,8 @@ public class DynamicTable {
 			
 		
 	}
+	
+	
 	@Test
 	public void checkboxTable() throws InterruptedException
 	{
@@ -100,6 +104,7 @@ public class DynamicTable {
 		}*/
 		
 	}
+	
 	@AfterTest
 	public void closebrowser()
 	{

@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="URL" value="http://www.facebook.com"/>
   <test name="Default test(failed)">
     <classes>
-      <class name="readExcelData.ReadTestDataSheet">
+      <class name="com.homepagetestcase.FillformTestCase">
         <methods>
-          <include name="readtestSheet"/>
+          <include name="lauchURL"/>
+          <include name="selectactions"/>
         </methods>
-      </class> <!-- readExcelData.ReadTestDataSheet -->
+      </class> <!-- com.homepagetestcase.FillformTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

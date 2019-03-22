@@ -2,6 +2,7 @@ package com.homepagetestcase;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.testBase.CloseBrowser;
@@ -11,7 +12,7 @@ import com.testBase.Waits;
 public class LaunchURLTestCase extends LaunchBrowser{
 	
 	 @Parameters({"URL"})
-	 @BeforeClass
+	 @BeforeTest
 	  public void beforeMethod(String URL) {
 		  launch(URL);   
 	  }

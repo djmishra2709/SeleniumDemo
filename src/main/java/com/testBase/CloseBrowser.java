@@ -8,6 +8,7 @@ public class CloseBrowser {
 	
 	public static void closeBrowser()
 	{
+		System.out.println("Closing browser1");
 		driver.close();
 	}
 

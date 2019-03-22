@@ -25,7 +25,7 @@ public class ReadByDatarovider {
 			    XSSFWorkbook book = new XSSFWorkbook(input);
 				sheet = book.getSheetAt(0); 
 			    int startRow = 1;			 
-			    int startCol = 0;
+			    int startCol = 1;
 			 
 			    int ci,cj;
 			 
@@ -38,7 +38,7 @@ public class ReadByDatarovider {
 			 
 			    for (int i=startRow;i<=totalRows;i++, ci++) {              
 			 
-			   cj=0;
+			    cj=0;
 			 
 			    for (int j=startCol;j<=totalCols;j++, cj++){
 			 

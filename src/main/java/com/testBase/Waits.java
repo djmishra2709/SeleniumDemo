@@ -15,14 +15,12 @@ public class Waits {
 	
 	public static void Simplewaits(int option) 
 	{
-		
+		System.out.println("calling simple wait :"+option);
 		driver.manage().timeouts().implicitlyWait(option,TimeUnit.SECONDS);
 		
 
 	}
 
-	
-	
 	public static void Conditionwaits(int option, WebElement element) 
 	{
 		
