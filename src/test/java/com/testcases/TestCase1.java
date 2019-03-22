@@ -33,7 +33,7 @@ public class TestCase1 extends LaunchBrowser{
   @Test
    public void login() 
   {
-	 System.out.println("test case executing");
+	 System.out.println("test case is executing");
 	 
   }
  
