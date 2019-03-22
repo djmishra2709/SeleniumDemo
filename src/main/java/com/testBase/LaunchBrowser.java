@@ -1,4 +1,4 @@
-package com.datadriven;
+package com.testBase;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +11,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 public class LaunchBrowser {
 	
 	public static WebDriver driver;
-	public  void launch(String URL) {
+	public static  void launch(String URL) {
 		System.setProperty("webdriver.gecko.driver", "E:\\geckodriver.exe");
 		  DesiredCapabilities capabilities = new DesiredCapabilities();
 		  capabilities = DesiredCapabilities.firefox();
@@ -25,8 +25,5 @@ public class LaunchBrowser {
 		  Waits.Simplewaits(10);
 		  
 	}
-	public void closebrowser()
-	{
-		  driver.quit();
-	}
+	
 }

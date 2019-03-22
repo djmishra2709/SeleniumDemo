@@ -1,4 +1,4 @@
-package com.testcases;
+package com.homepagetestcase;
 
 import java.io.IOException;
 
